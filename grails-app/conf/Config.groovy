@@ -127,6 +127,9 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/**':								['permitAll']
 ]
 
+grails.plugin.springsecurity.logout.postOnly = false
+
+// OAuth
 def baseURL = grails.serverURL ?: "http://localhost:${System.getProperty('server.port', '8080')}"
 oauth {
 	debug = true
