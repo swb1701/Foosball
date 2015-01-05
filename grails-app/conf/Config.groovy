@@ -136,8 +136,8 @@ oauth {
 	providers {
 		google {
 			api = org.grails.plugin.springsecurity.oauth.GoogleApi20
-			key = localConfig.theconnman.oauth.google.key
-			secret = localConfig.theconnman.oauth.google.secret
+			key = localConfig.oauth.google.key
+			secret = localConfig.oauth.google.secret
 			successUri = '/oauth/google/success'
 			failureUri = '/oauth/google/failure'
 			callback = "${baseURL}/oauth/google/callback"

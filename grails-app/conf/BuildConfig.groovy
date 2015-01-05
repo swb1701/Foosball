@@ -63,7 +63,7 @@ grails.project.dependency.resolution = {
         compile ":scaffolding:2.0.2"
         compile ':cache:1.1.1'
         compile ":quartz:1.0.1"
-		compile ":background-thread:1.6"
+		compile ":executor:0.3"
 		compile ":spring-security-oauth-google:0.3.1"
 
         // plugins needed at runtime but not for compilation

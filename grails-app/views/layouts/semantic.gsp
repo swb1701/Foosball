@@ -20,7 +20,7 @@
 	</head>
 	<body>
 		<div class="ui segment">
-			<div id="grailsLogo" role="banner"><a href="http://grails.org"><img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Grails"/></a></div>
+			<div id="grailsLogo" role="banner"><a href="http://theconnman.com"><img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Grails"/></a></div>
 		</div>
 		<g:layoutBody/>
 		<div class="footer"></div>
