@@ -9,13 +9,13 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title><g:layoutTitle default="Grails Base"/></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<g:javascript src="jquery.min.js" />
+        <script src="${resource(dir: 'js', file: 'jquery.min.js')}" charset="utf-8"></script>
         <script src="${resource(dir: 'semantic', file: 'semantic.min.js')}" charset="utf-8"></script>
         <script src="${resource(dir: 'js', file: 'sweet-alert.min.js')}" charset="utf-8"></script>
 		<link rel="stylesheet" href="${resource(dir: 'semantic', file: 'semantic.min.css')}" type="text/css">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'sweet-alert.css')}" type="text/css">
 		<g:layoutHead/>
-		<g:javascript library="application"/>		
+		<g:javascript library="application"/>
 		<r:layoutResources />
 	</head>
 	<body>
