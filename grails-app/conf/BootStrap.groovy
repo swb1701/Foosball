@@ -1,6 +1,6 @@
-import com.theconnman.Role
-import com.theconnman.User
-import com.theconnman.UserRole
+import com.swblabs.foosball.Role
+import com.swblabs.foosball.User
+import com.swblabs.foosball.UserRole
 
 class BootStrap {
 	
@@ -13,8 +13,8 @@ class BootStrap {
 		println 'Bootstrapping'
 		def adminRole = new Role(authority: "ROLE_ADMIN").save()
 		def userRole = new Role(authority: "ROLE_USER").save()
-		createUser('admin', 'theconnman', adminRole)
-		createUser('user', 'theconnman', userRole)
+		createUser('admin', 'swb!admin', adminRole)
+		createUser('demo', 'demo', userRole)
     }
     def destroy = {
 		

@@ -1,4 +1,6 @@
-package com.theconnman
+package com.swblabs.foosball
+
+import com.swblabs.foosball.HomeController;
 
 import grails.test.mixin.TestFor
 import spock.lang.Specification

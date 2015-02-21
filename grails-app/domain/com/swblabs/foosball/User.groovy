@@ -1,4 +1,4 @@
-package com.theconnman
+package com.swblabs.foosball
 
 class User {
 
@@ -10,8 +10,6 @@ class User {
 	boolean accountExpired
 	boolean accountLocked
 	boolean passwordExpired
-	
-	static hasMany = [oAuthIDs: OAuthID]
 
 	static transients = ['springSecurityService']
 

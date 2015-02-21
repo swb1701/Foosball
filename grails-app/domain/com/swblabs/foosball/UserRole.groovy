@@ -1,4 +1,4 @@
-package com.theconnman
+package com.swblabs.foosball
 
 import org.apache.commons.lang.builder.HashCodeBuilder
 

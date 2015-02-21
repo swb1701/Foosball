@@ -9,7 +9,6 @@ class UrlMappings {
 		
 		"/"(controller:'home')
         "/controllers"(view:'/index')
-		'/oauth/askToCreateAccount'(controller: 'springSecurityOAuth', action: 'askToCreateAccount')
         "500"(view:'/error')
 	}
 }

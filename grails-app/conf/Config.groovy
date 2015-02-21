@@ -120,31 +120,11 @@ log4j = {
 grails.app.context = '/'
 
 // Added by the Spring Security Core plugin:
-grails.plugin.springsecurity.userLookup.userDomainClassName = 'com.theconnman.User'
-grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'com.theconnman.UserRole'
-grails.plugin.springsecurity.authority.className = 'com.theconnman.Role'
+grails.plugin.springsecurity.userLookup.userDomainClassName = 'com.swblabs.foosball.User'
+grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'com.swblabs.foosball.UserRole'
+grails.plugin.springsecurity.authority.className = 'com.swblabs.foosball.Role'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/**':								['permitAll']
 ]
 
 grails.plugin.springsecurity.logout.postOnly = false
-
-// OAuth
-def baseURL = grails.serverURL ?: "http://localhost:${System.getProperty('server.port', '8080')}"
-oauth {
-	debug = true
-	providers {
-		google {
-			api = org.grails.plugin.springsecurity.oauth.GoogleApi20
-			key = localConfig.oauth.google.key
-			secret = localConfig.oauth.google.secret
-			successUri = '/oauth/google/success'
-			failureUri = '/oauth/google/failure'
-			callback = "${baseURL}/oauth/google/callback"
-			scope = 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email'
-		}
-	}
-}
-// Added by the Spring Security OAuth plugin:
-grails.plugin.springsecurity.oauth.domainClass = 'com.theconnman.OAuthID'
-grails.plugin.springsecurity.oauth.registration.askToLinkOrCreateAccountUri = '/oauth/askToCreateAccount'
