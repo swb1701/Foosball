@@ -70,7 +70,7 @@ grails.project.dependency.resolution = {
         runtime ":hibernate:3.6.10.8" // or ":hibernate4:4.3.1.1"
         runtime ":resources:1.2.1"
 		compile ":spring-security-core:2.0-RC2"
-		
+		compile ":events-push:1.0.M3"
 		runtime ':email-confirmation:2.0.8'
         runtime ':mail:1.0.1'
     }
