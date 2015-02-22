@@ -89,10 +89,11 @@ grails.hibernate.cache.queries = false
 environments {
     development {
         grails.logging.jul.usebridge = true
+		grails.serverURL = 'http://localhost:8080'
     }
     production {
         grails.logging.jul.usebridge = false
-        // TODO: grails.serverURL = "http://www.changeme.com"
+        //grails.serverURL = "http://www.changeme.com"
     }
 }
 
@@ -118,6 +119,13 @@ log4j = {
 }
 
 grails.app.context = '/'
+
+plugin.platformCore.events.catchFlushExceptions = true
+
+events.push.servlet.initParams = [
+	"org.atmosphere.useNative": "true",
+	"org.atmosphere.cpr.CometSupport.maxInactiveActivity": "100"
+]
 
 // Added by the Spring Security Core plugin:
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'com.swblabs.foosball.User'

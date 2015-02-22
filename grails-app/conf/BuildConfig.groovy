@@ -6,6 +6,8 @@ grails.project.work.dir = "target/work"
 //grails.tomcat.nio=true
 grails.project.target.level = 1.6
 grails.project.source.level = 1.6
+grails.tomcat.nio = true
+grails.project.fork = []
 //grails.project.war.file = "target/${appName}-${appVersion}.war"
 
 grails.project.fork = [
@@ -43,6 +45,7 @@ grails.project.dependency.resolution = {
         mavenCentral()
 		mavenRepo "http://download.java.net/maven/2/"
 		mavenRepo "http://repo.spring.io/milestone/"
+		mavenRepo "https://oss.sonatype.org/content/repositories/snapshots/"
         // uncomment these (or add new ones) to enable remote dependency resolution from public Maven repositories
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
